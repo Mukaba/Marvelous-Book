@@ -12,7 +12,7 @@ class display {
             <div class="author-books">
               <h4 class="author-name">${item.inputVal}</h4>
               <h5 class="boock-name">${item.inputVall}</h5>
-              <small class="del delete" data-id = ${item.id}>Delete</small>
+              <button type="button" class="del delete" data-id = ${item.id}>Delete</button>
               <hr>
             </div>
       `);
