@@ -15,6 +15,7 @@ form.addEventListener('submit', (e) => {
   library = [...library, inputVal];
   // console.log(library);
   display.displayData();
+  display.restoreInput()
 });
 
 // objeck instance
@@ -40,6 +41,10 @@ class display {
     });
     // inject the data into html
     section.innerHTML = (displayData).join("");
+  }
+  static restoreInput() {
+    author.value = "";
+    book.value = "";
   }
 }
 
