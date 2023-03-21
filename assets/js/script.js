@@ -12,8 +12,7 @@ class display {
             <div class="author-books">
               <h4 class="author-name">${item.inputVal}</h4>
               <h5 class="boock-name">${item.inputVall}</h5>
-              const removeBtn = document.createElement('button');
-              removeBtn.textContent = 'Remove';
+              <small class="del delete" data-id = ${item.id}>Delete</small>
               <hr>
             </div>
       `);
