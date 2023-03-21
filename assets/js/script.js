@@ -1,6 +1,3 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable max-classes-per-file */
-
 const form = document.querySelector('[data-form]');
 const section = document.querySelector('[data-author-book]');
 const author = document.querySelector('[data-author-input]');
