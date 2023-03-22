@@ -55,7 +55,6 @@ class display {
     keepdata.addToLocalStorage(library);
   }
 }
-
 // instance
 class InputVal {
   constructor(id, inputVal) {
@@ -65,8 +64,8 @@ class InputVal {
   }
 }
 
-// prevent auto refresh when clickimg to the submit button
-// generate a random ID to be assign to authors_books
+// prevent auto refresh when clickimg to the submit
+// button generate a random ID to be assign to authors_books
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const id = Math.random() * 500;
