@@ -3,8 +3,22 @@ const section = document.querySelector('[data-author-book]');
 const author = document.querySelector('[data-author-input]');
 const book = document.querySelector('[data-book-input]');
 
+// store
+class keepdata {
+  static addToLocalStorage(library) {
+    const storage = localStorage.setItem('inputVal', JSON.stringify(library));
+    return storage;
+  }
+
+  static getStorage() {
+    const storage = localStorage.getItem('inputVal') == null
+      ? [] : JSON.parse(localStorage.getItem('inputVal'));
+    return storage;
+  }
+}
+
 // create an arry to hold all books
-let library = [];
+let library = keepdata.getStorage();
 // display data into html
 class display {
   static displayData() {
@@ -38,6 +52,7 @@ class display {
 
   static deleteFromArray(id) {
     library = library.filter((item) => item.id !== +id);
+    keepdata.addToLocalStorage(library);
   }
 }
 
@@ -61,5 +76,12 @@ form.addEventListener('submit', (e) => {
   display.displayData();
   display.restoreInput();
   // delete book-author
+  display.deleteFromStore();
+  // add to sto
+  keepdata.addToLocalStorage(library);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  display.displayData();
   display.deleteFromStore();
 });
