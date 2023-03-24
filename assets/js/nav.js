@@ -5,18 +5,18 @@ const bookssection = document.querySelector('[data-books-section]');
 const formsection = document.querySelector('[data-form]');
 const contactsection = document.querySelector('[data-contact-section]');
 
-listbtn.addEventListener('click', ()=> {
+listbtn.addEventListener('click', () => {
   bookssection.classList.remove('hide');
   formsection.classList.remove('active');
   contactsection.classList.remove('active');
 });
-newbtn.addEventListener('click', ()=> {
+newbtn.addEventListener('click', () => {
   bookssection.classList.add('hide');
   formsection.classList.add('active');
   contactsection.classList.remove('active');
 });
-contactbtn.addEventListener('click', ()=> {
+contactbtn.addEventListener('click', () => {
   formsection.classList.remove('active');
   contactsection.classList.add('active');
   bookssection.classList.add('hide');
-})
+});
