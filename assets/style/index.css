@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  background-color: blueviolet;
+  color: white;
+}
+
+.nav-bar h1 {
+  height: max-content;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  height: max-content;
+  gap: 1rem;
+}
+
+.nav-list hr {
+  border: 1px solid grey;
+}
+
+.nav-list li {
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+}
+
+.nav-list li:hover {
+  transition: 0.5s ease;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list0fbooks-title {
+  width: fit-content;
+  align-self: center;
+  padding: 1rem 0 0 0;
+  font-size: 2rem;
+}
+
+.author-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.author-list > :nth-child(odd) {
+  background-color: #a9a9a934;
+}
+
+.author-by {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.author-books {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  padding: 0.7rem 0.2rem;
+  justify-content: space-between;
+  border: 1px solid #a9a9a934;
+}
+
+.del {
+  cursor: pointer;
+  padding: 0.3rem 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+}
+
+form input {
+  padding: 0.3rem;
+  outline: none;
+}
+
+form button {
+  padding: 0.3rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-list {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 0.8rem;
+  background-color: blueviolet;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
