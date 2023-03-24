@@ -2,12 +2,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(137, 166, 136);
 }
 
 .nav-bar {
@@ -27,7 +27,7 @@ body {
   list-style: none;
   display: flex;
   height: max-content;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .nav-list hr {
