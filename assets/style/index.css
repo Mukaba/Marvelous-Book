@@ -120,7 +120,7 @@ form button {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .contact-list {
