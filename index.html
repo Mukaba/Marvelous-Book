@@ -4,21 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width , initial-scale=1.0">
-   <link rel="stylesheet" href="./assets/index.css">
+   <link rel="stylesheet" href="./assets/style/index.css">
   <title>Home | Owesome Books</title>
 </head>
 <body>
-  <h1>Owesome Books</h1>
-  <hr>
-  <section class="author-list" data-author-book>
+  <header class="nav-bar">
+    <h1>Owesome Books</h1>
+    <ul class="nav-list">
+      <li data-link-list>List</li><hr>
+      <li data-link-new>Add new</li><hr>
+      <li data-link-contact>Contact</li>
+    </ul>
+  </header>
+
+  <section class="books-container" data-books-section>
+    <h3 class="list0fbooks-title">All awesome books</h3>
+    <div class="author-list" data-author-book>
+    </div>
   </section>
 
-  <form action="" data-form>
-        <input type="text" name="" id="" placeholder="BookTitle" data-author-input required>
-        <input type="text" name="" id="" placeholder="Author" data-book-input required>
-    <button type="submit">Add</button >
+  <form class="form-inputs hide" action="" data-form>
+      <input type="text" name="" id="" placeholder="BookTitle" data-author-input required>
+      <input type="text" name="" id="" placeholder="Author" data-book-input required>
+      <button type="submit">Add</button >
   </form>
 
+  <section class="contact-us hide" data-contact-section>
+    <h3>Contact Information</h3>
+    <div class="contact-us-info">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eligendi enim sint nulla ipsa laborum facilis perspiciatis optio dolorem minus pariatur consectetur aspernatur similique molestiae, inventore accusamus itaque, provident consequatur?
+      </p>
+      <ul class="contact-list">
+        <li>Our email:jeanlouismukaba01@yahoo.com</li>
+        <li>Our Tel: +243 993 921 706</li>
+        <li>Our Address: Remote, Zoom</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer-info">
+    <p>Copyright ...</p>
+    <p>Copyright ...</p>
+  </footer>
+
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>
