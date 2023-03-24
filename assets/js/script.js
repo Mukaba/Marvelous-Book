@@ -24,10 +24,12 @@ class display {
   static displayData() {
     const displayData = library.map((item) => `
             <div class="author-books">
-              <h4 class="author-name">${item.inputVal}</h4>
-              <h5 class="boock-name">${item.inputVall}</h5>
-              <button type="button" class="del delete" data-id = ${item.id}>Delete</button>
-              <hr>
+              <div class="author-by">
+                <h4 class="author-name">${item.inputVal}</h4>
+                <span>by</span>
+                <h5 class="boock-name">${item.inputVall}</h5>
+              </div>
+              <button type="button" class="del delete" data-id = ${item.id}>Delete</button>              
             </div>
       `);
     // inject the data into html
