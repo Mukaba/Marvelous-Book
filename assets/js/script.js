@@ -1,5 +1,6 @@
 import navLinks from './modules/nav.js';
 import keepdata from './modules/datastorage.js';
+import { DateTime } from './modules/luxon.js';
 
 navLinks();
 
@@ -7,8 +8,6 @@ const form = document.querySelector('[data-form]');
 const section = document.querySelector('[data-author-book]');
 const author = document.querySelector('[data-author-input]');
 const book = document.querySelector('[data-book-input]');
-
-import { DateTime } from './modules/luxon.js';
 
 // Date and time from luxon.js
 const currentDate = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
