@@ -64,8 +64,8 @@ GETTING STARTED
 To get a local copy up and running, follow these steps.
 
 Use Git or checkout with SVN using the web URL.
-https: `https://github.com/Mukaba/Awesome Book.git` or 
-ssh: `git@github.com:Mukaba/Awesome Book.git`
+https: `https://github.com/Mukaba/Marvelous-Book.git` or 
+ssh: `git@github.com:Mukaba/Marvelous-Book.git`
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
