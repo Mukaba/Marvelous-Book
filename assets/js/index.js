@@ -1,21 +1,18 @@
+import navLinks from './modules/nav.js';
+import keepdata from './modules/datastorage.js';
+import { DateTime } from './modules/luxon.js';
+
+navLinks();
+
 const form = document.querySelector('[data-form]');
 const section = document.querySelector('[data-author-book]');
 const author = document.querySelector('[data-author-input]');
 const book = document.querySelector('[data-book-input]');
 
-// store
-class keepdata {
-  static addToLocalStorage(library) {
-    const storage = localStorage.setItem('inputVal', JSON.stringify(library));
-    return storage;
-  }
-
-  static getStorage() {
-    const storage = localStorage.getItem('inputVal') == null
-      ? [] : JSON.parse(localStorage.getItem('inputVal'));
-    return storage;
-  }
-}
+// Date and time from luxon.js
+const currentDate = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+const currentTime = document.getElementById('currentTime');
+currentTime.innerHTML = currentDate.toString();
 
 // create an arry to hold all books
 let library = keepdata.getStorage();
