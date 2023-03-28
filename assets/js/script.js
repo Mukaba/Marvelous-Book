@@ -8,6 +8,13 @@ const section = document.querySelector('[data-author-book]');
 const author = document.querySelector('[data-author-input]');
 const book = document.querySelector('[data-book-input]');
 
+import { DateTime } from './modules/luxon.js';
+
+// Date and time from luxon.js
+const currentDate = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+const currentTime = document.getElementById('currentTime');
+currentTime.innerHTML = currentDate.toString();
+
 // create an arry to hold all books
 let library = keepdata.getStorage();
 // display data into html
